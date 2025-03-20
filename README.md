@@ -39,9 +39,17 @@ The EDA phase involved creating a series of visualizations to explore data distr
 
 - Income Status Distribution: Visualizing income levels with a pastel color palette revealed varied socioeconomic profiles across the towns. The charts highlighted that many Large towns tend to have a higher proportion of lower-income areas, whereas Small towns showed a more diverse income status mix. This observation hints at an underlying association between town size and economic factors, which may influence educational performance.
 
+![image](https://github.com/user-attachments/assets/9c3f7eca-a520-476b-83f6-436509a05390)
+
 - Graduation Rates Distributions: Histograms for both high school (GCSE) and college graduation rates uncovered important distribution characteristics. The high school graduation data appeared approximately normally distributed with only moderate skewness, suggesting consistency across towns. In contrast, the college graduation rates demonstrated a wider range and a greater spread, indicating more variability that might be linked to other socioeconomic or regional factors. Notable outliers in both distributions were flagged for further investigation, as they could represent exceptional cases or data quality issues.
 
+![image](https://github.com/user-attachments/assets/c827326b-89b6-40fc-81aa-6ed5422ebda5), ![image](https://github.com/user-attachments/assets/12700450-6012-472b-a513-06d6e577616f)
+
+
 - Summary Statistics: Grouped summary tables produced using gtsummary provided a concise quantitative comparison between Large and Small towns. The tables showed that while the average high school graduation rate was slightly higher in Small towns, the difference in college graduation rates was more pronounced. These differences, along with the corresponding standard deviations, provide a quantitative basis for further hypothesis testing and suggest that town size might be an influential factor in educational outcomes.
+
+![image](https://github.com/user-attachments/assets/a668ab26-cbbf-4fd4-9476-fcbf1037b13c)
+
 
 ## Data Analysis and Hypothesis Testing
 
