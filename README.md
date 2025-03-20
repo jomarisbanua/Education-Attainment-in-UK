@@ -35,6 +35,8 @@ The EDA phase involved creating a series of visualizations to explore data distr
 
 - Town Size Distribution: Bar charts indicated a clear split between Large and Small towns. The frequency distribution confirmed that both categories were well-represented, ensuring reliable comparisons between urban centers and smaller communities. This balanced distribution supports further analyses by providing a robust grouping for evaluating differences in educational outcomes.
 
+![image](https://github.com/user-attachments/assets/e1d6b085-da7b-441e-8153-fafc59bfcd91)
+
 - Income Status Distribution: Visualizing income levels with a pastel color palette revealed varied socioeconomic profiles across the towns. The charts highlighted that many Large towns tend to have a higher proportion of lower-income areas, whereas Small towns showed a more diverse income status mix. This observation hints at an underlying association between town size and economic factors, which may influence educational performance.
 
 - Graduation Rates Distributions: Histograms for both high school (GCSE) and college graduation rates uncovered important distribution characteristics. The high school graduation data appeared approximately normally distributed with only moderate skewness, suggesting consistency across towns. In contrast, the college graduation rates demonstrated a wider range and a greater spread, indicating more variability that might be linked to other socioeconomic or regional factors. Notable outliers in both distributions were flagged for further investigation, as they could represent exceptional cases or data quality issues.
