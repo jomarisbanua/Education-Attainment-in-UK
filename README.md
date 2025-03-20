@@ -127,12 +127,12 @@ The power analysis results supported the robustness of the statistical tests, en
 **Languages and Tools:**  
 - **R:** The entire analysis was conducted using R.
 - **Key Libraries:**  
-  - **dplyr:** For data manipulation and cleaning.
-  - **forcats:** For handling factor levels and collapsing categories.
-  - **ggplot2:** For creating visualizations.
-  - **gtsummary:** For generating summary tables.
-  - **pwr:** For performing power analyses.
-  - **scales:** For formatting visualizations.
+  - **tidyverse** – A collection of R packages for data science, including dplyr and ggplot2.
+  - **ggplot2** – For creating visualizations to explore trends and patterns.
+  - **dplyr** – For efficient data manipulation, filtering, and transformation.
+  - **gtsummary** – For generating well-structured summary tables.
+  - **pwr** – For conducting power analysis and ensuring statistical tests were adequately powered.
+  - **knitr** – For formatting tables and reports, ensuring reproducibility in documentation.
 
 ## VII. Conclusion
 
