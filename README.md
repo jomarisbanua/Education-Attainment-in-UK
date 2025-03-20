@@ -17,7 +17,7 @@ This repository includes data preprocessing scripts, statistical analysis, and v
 
 📌 Contributions and discussions are welcome!
 
-## Data Cleaning and Preparation
+## II. Data Cleaning and Preparation
 
 **Variable Selection and Renaming:**  
 - **Key Variables:** The dataset was refined to include important factors: `town11nm` (geographical identifier), `size_flag`, `income_flag`, `university_flag`, along with measures for high school graduation (GCSEs) and college graduation (`college_grad`).
@@ -29,7 +29,7 @@ This repository includes data preprocessing scripts, statistical analysis, and v
 **Exclusion of Irrelevant Variables:**  
 - Non-essential variables, including those with incomplete or redundant information, were removed to maintain focus on the determinants of educational attainment.
 
-## Exploratory Data Analysis (EDA)
+## III. Exploratory Data Analysis (EDA)
 
 The EDA phase involved creating a series of visualizations to explore data distributions and potential relationships:
 
@@ -51,11 +51,11 @@ The EDA phase involved creating a series of visualizations to explore data distr
 ![image](https://github.com/user-attachments/assets/a668ab26-cbbf-4fd4-9476-fcbf1037b13c)
 
 
-## Data Analysis and Hypothesis Testing
+## IV. Data Analysis and Hypothesis Testing
 
 Four main tests were performed to address the research questions:
 
-### Test 1: High School Graduation Rates (Small vs. Large Towns)
+**Test 1: High School Graduation Rates (Small vs. Large Towns)**
 - **Objective:** To determine whether a statistically significant difference exists between the high school graduation rates of small and large towns.
 - **Method:** A two-sample t-test was conducted after checking assumptions of independence, normality, and adequate sample size.  
 - **Results:**  
@@ -63,7 +63,7 @@ Four main tests were performed to address the research questions:
   - The effect size (Cohen's d) was relatively small, suggesting that while differences exist, they may be subtle.
   - Power analysis indicated a sufficient sample size to detect this difference.
 
-### Test 2: College Graduation Rates (Small vs. Large Towns)
+**Test 2: College Graduation Rates (Small vs. Large Towns)**
 - **Objective:** To evaluate whether college graduation rates differ significantly between small and large towns.
 - **Method:** A similar two-sample t-test was used along with effect size estimation and power analysis.
 - **Results:**  
@@ -71,25 +71,25 @@ Four main tests were performed to address the research questions:
   - A larger effect size was found compared to high school graduation, indicating a more pronounced difference in college graduation rates.
   - The power analysis confirmed that the test was well-powered.
 
-### Test 3: Association Between Income and Town Size
+**Test 3: Association Between Income and Town Size**
 - **Objective:** To assess whether income levels and town size are associated.
 - **Method:** A Chi-squared test of independence was applied to the contingency table of income status and town size, and Cramér's V was calculated to measure effect size.
 - **Results:**  
   - The Chi-squared test produced a significant result (p-value < 2.2e-16), leading to the rejection of the null hypothesis of independence.
   - The computed Cramér's V indicates a moderate association between income levels and town size.
 
-### Test 4: Predictive Relationship Between High School and College Graduation Rates
+**Test 4: Predictive Relationship Between High School and College Graduation Rates**
 - **Objective:** To investigate if high school graduation rates (GCSEs) can predict college graduation rates.
 - **Method:** Linear regression was used, and assumptions (linearity, independence, constant variance, and normality of residuals) were validated.  
 - **Results:**  
   - The model showed a strong linear relationship, with an R-squared of approximately 0.598. This indicates that nearly 60% of the variation in college graduation rates can be explained by high school performance.
   - The regression coefficients were statistically significant, and the overall model was robust, as confirmed by power analysis.
 
-## Power Analysis Discussion
+## V. Power Analysis Discussion
 
 Power analysis was conducted to ensure that statistical tests had sufficient sensitivity to detect meaningful differences in educational outcomes. Given the structured comparisons between town sizes and graduation rates, as well as the association between income levels and town size, the power analysis helped confirm that the sample size was adequate for drawing reliable conclusions.
 
-### **1. Power Analysis for High School Graduation Rate Differences (Small vs. Large Towns)**
+**1. Power Analysis for High School Graduation Rate Differences (Small vs. Large Towns)**
 - A two-sample t-test was planned to compare mean GCSE scores between Small and Large towns.
 - To assess the **effect size**, Cohen’s *d* was calculated using the pooled standard deviation of both groups.
 - The power of the test was computed using `pwr.t.test()`, ensuring that the sample size was large enough to detect a true difference if one existed.
@@ -97,32 +97,32 @@ Power analysis was conducted to ensure that statistical tests had sufficient sen
   - The observed effect size was small but statistically significant.
   - The computed power was **above 0.78**, suggesting a reasonable probability of detecting a real effect.
 
-### **2. Power Analysis for College Graduation Rate Differences**
+**2. Power Analysis for College Graduation Rate Differences**
 - Given the observed variability in college graduation rates, another power analysis was performed for this comparison.
 - The effect size was larger than that of high school graduation rates, indicating a stronger difference between Small and Large towns.
 - The power was computed similarly using `pwr.t.test()`, and results showed **power > 0.99**, meaning a very high likelihood of correctly rejecting the null hypothesis if a true difference existed.
 
-### **3. Power Analysis for Chi-Square Test (Income vs. Town Size)**
+**3. Power Analysis for Chi-Square Test (Income vs. Town Size)**
 - Since income levels were categorized, a **Chi-squared test of independence** was conducted to examine whether income status was associated with town size.
 - Power analysis for the Chi-squared test was performed using `pwr.chisq.test()`, leveraging **Cramér’s V** as a measure of effect size.
 - **Findings:**
   - The observed effect size was moderate.
   - The computed power was **near 1**, confirming that the dataset had more than enough observations to detect an association if one was present.
 
-### **4. Power Analysis for Regression: GCSEs as a Predictor of College Graduation Rates**
+**4. Power Analysis for Regression: GCSEs as a Predictor of College Graduation Rates**
 - For the linear regression model predicting college graduation rates from high school graduation rates, **Cohen’s f²** was used to assess effect size.
 - The power of the regression model was calculated using `pwr.f2.test()`, based on the R-squared value from the fitted model.
 - **Findings:**
   - With an R-squared of **0.598**, the effect size was strong.
   - The computed power was **1.00**, confirming that the model was well-powered to detect a relationship.
 
-### **Overall Implications**
+**Overall Implications**
 The power analysis results supported the robustness of the statistical tests, ensuring that the study’s conclusions were not driven by chance or inadequate sample sizes. The findings indicated that:
 - The t-tests were sufficiently powered, particularly for college graduation rates.
 - The chi-squared test was highly reliable in detecting associations.
 - The regression model was well-calibrated with strong predictive power.
 - 
-## Technical Details
+## VI. Technical Details
 
 **Languages and Tools:**  
 - **R:** The entire analysis was conducted using R.
@@ -134,11 +134,7 @@ The power analysis results supported the robustness of the statistical tests, en
   - **pwr:** For performing power analyses.
   - **scales:** For formatting visualizations.
 
-**Project Execution:**  
-- The interactive visualizations and analyses were compiled into an HTML dashboard for easy dissemination and stakeholder engagement.  
-- The code is well-documented, ensuring that the decisions made during data preparation and analysis are clear and reproducible.
-
-## Conclusion
+## VII. Conclusion
 
 The analysis revealed significant differences in educational outcomes between small and large towns. Specifically:
 - High school graduation rates differ modestly between town types, while college graduation rates show a more marked difference.
@@ -147,7 +143,7 @@ The analysis revealed significant differences in educational outcomes between sm
 
 These insights provide a foundation for further research and may inform targeted interventions to address educational disparities across different regions.
 
-## Future Directions
+## VIII. Future Directions
 
 - **Granular Analysis:** Future work may incorporate more detailed, school-level data.
 - **Longitudinal Study:** Extending the analysis over multiple years to observe trends.
