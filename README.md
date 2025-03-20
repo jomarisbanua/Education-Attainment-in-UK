@@ -1,4 +1,4 @@
-# Education-Attainment-in-UK
+# Education Attainment in UK
 Data: https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-01-23/english_education.csv
 
 ## I. Project Goals and Tasks
