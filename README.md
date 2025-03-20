@@ -33,7 +33,7 @@ This repository includes data preprocessing scripts, statistical analysis, and v
 
 The EDA phase involved creating a series of visualizations to explore data distributions and potential relationships:
 
-- Town Size Distribution: Bar charts indicated a clear split between Large and Small towns. The frequency distribution confirmed that both categories were well-represented, ensuring reliable comparisons between urban centers and smaller communities. This balanced distribution supports further analyses by providing a robust grouping for evaluating differences in educational outcomes.
+- Town Size Distribution: Bar charts indicated a clear split between Large and Small towns. The frequency distribution confirmed that both categories were well-represented, with smaller towns having higher frequency as we normally expect. 
 
 ![image](https://github.com/user-attachments/assets/e1d6b085-da7b-441e-8153-fafc59bfcd91)
 
